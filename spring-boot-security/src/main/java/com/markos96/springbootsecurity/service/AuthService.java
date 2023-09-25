@@ -31,21 +31,19 @@ public class AuthService {
                 .build();
     }
 
-    public AuthResponseDTO register(RegisterDTO registerDTO) {
+    public String register(RegisterDTO registerDTO) {
         User user = User.builder()
                 .username(registerDTO.getUsername())
                 .password(passwordEncoder.encode(registerDTO.getPassword()))
                 .firstname(registerDTO.getFirstname())
                 .lastname(registerDTO.getLastname())
                 .country(registerDTO.getCountry())
-                .role(Role.ADMIN)
+                .role(Role.USER)
                 .build();
 
         userRepository.save(user);
 
-        return AuthResponseDTO.builder()
-                .token(jwtService.getToken(user))
-                .build();
+        return "User registred successfully";
     }
 
     @Autowired
