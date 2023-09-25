@@ -8,3 +8,9 @@ spring:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL8Dialect
+
+key:
+    secret: "Testsecretkeyasauthenticationsampleusingspringsecuritywithjwt"
+
+expiration:
+  date: 300000
