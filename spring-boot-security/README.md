@@ -37,3 +37,5 @@ in your own application, you can:
 * Review the security-related classes and configuration files.
 * Customize the authentication and authorization logic to fit your requirements.
 * Add your own endpoints and services as needed.
+
+![Spring Security Flow](/src/main/resources/templates/spring-security-flow.png)
