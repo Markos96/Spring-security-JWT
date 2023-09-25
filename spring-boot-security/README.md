@@ -38,6 +38,8 @@ in your own application, you can:
 * Customize the authentication and authorization logic to fit your requirements.
 * Add your own endpoints and services as needed.
 
+***
+
 ## <u>Spring Security Flow<u/>
 
 ![Spring Security Flow](src/main/resources/static/spring-security-flow.png)
