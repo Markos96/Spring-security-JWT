@@ -64,7 +64,12 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         filterChain.doFilter(request, response);
     }
 
-    // Nos devuelve el token, el cual obtenemos del encabezado del request
+    /**
+     * It returns the token, which we obtain from the request header
+     *
+     * @param HttpServletRequest request
+     * @return token or null
+     */
     private String getTokenFromRequest(HttpServletRequest request) {
         final String authHeader = request.getHeader(HttpHeaders.AUTHORIZATION);
 
